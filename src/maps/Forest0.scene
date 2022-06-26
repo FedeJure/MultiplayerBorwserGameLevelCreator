@@ -1,0 +1,93 @@
+{
+    "id": "b32ac012-8709-4902-86e1-b291ae070910",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "Forest0",
+        "borderWidth": 2048,
+        "borderHeight": 2048
+    },
+    "displayList": [
+        {
+            "type": "TilemapLayer",
+            "id": "0712fc8a-fd7b-4f2a-9f64-17c707dc5799",
+            "label": "background_1",
+            "components": [],
+            "tilemapId": "e198b6ac-0971-4a10-a9bc-a2fda2af513e",
+            "layerName": "background",
+            "tilesets": [
+                "forest"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "d01e52d2-1119-4b9a-9b03-29729a655a4d",
+            "label": "ground_1",
+            "components": [],
+            "tilemapId": "e198b6ac-0971-4a10-a9bc-a2fda2af513e",
+            "layerName": "ground",
+            "tilesets": [
+                "forest"
+            ]
+        },
+        {
+            "type": "TilemapLayer",
+            "id": "2ca1fd73-1043-4bb0-9e25-b2853b509032",
+            "label": "foreground_1",
+            "components": [],
+            "tilemapId": "e198b6ac-0971-4a10-a9bc-a2fda2af513e",
+            "layerName": "foreground",
+            "tilesets": [
+                "forest"
+            ]
+        },
+        {
+            "type": "Rectangle",
+            "id": "ee48b8b6-41bb-4290-a1ec-a0ddb5c3733c",
+            "label": "groundCollider",
+            "components": [
+                "Collider"
+            ],
+            "x": 1,
+            "y": 1249,
+            "scaleX": 15.996933847548783,
+            "scaleY": 6.254773487057181,
+            "originX": 0,
+            "originY": 0,
+            "width": 128,
+            "height": 128
+        },
+        {
+            "type": "Rectangle",
+            "id": "892dfbab-005b-4f5c-8395-2c05d7a58590",
+            "label": "rectangle_1",
+            "components": [],
+            "x": 87,
+            "y": 95,
+            "isFilled": true,
+            "width": 128,
+            "height": 128
+        }
+    ],
+    "plainObjects": [
+        {
+            "id": "e198b6ac-0971-4a10-a9bc-a2fda2af513e",
+            "type": "Tilemap",
+            "label": "forest_0",
+            "key": "forest_0",
+            "tilesets": [
+                {
+                    "name": "forest",
+                    "imageKey": "forest"
+                }
+            ]
+        }
+    ],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
