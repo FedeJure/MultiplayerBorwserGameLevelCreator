@@ -16,7 +16,13 @@ class SceneExporter {
 		console.log(gameObject)
 		gameObject.setInteractive()
 		gameObject.on('pointerdown', () => {
-			console.log(JSON.stringify(gameObject.scene.children.list.filter(c => c !== gameObject && c.type !== 'TilemapLayer').map(c => c.toJSON())))
+			console.log(gameObject.scene.children.list.map(s => JSON.stringify(s.data?.list)))
+			console.log(JSON.stringify(gameObject.scene.children.list.filter(c => c !== gameObject && c.type !== 'TilemapLayer').map(c => {
+				const obj = c.toJSON()
+				if (c.data)
+					obj.data = c.data?.list
+				return obj
+			})))
 		}, this)
 
 		/* END-USER-CTR-CODE */

@@ -31,11 +31,6 @@ class Preload extends Phaser.Scene {
 		this.editorCreate();
 
 		this.editorPreload();
-
-		this.load.on(Phaser.Loader.Events.COMPLETE, () => {
-			const sceneKey = 'Forest0'
-			this.scene.start(sceneKey)
-		});
 	}
 
 	/* END-USER-CODE */

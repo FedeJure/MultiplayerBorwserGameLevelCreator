@@ -48,9 +48,19 @@
                 "key": "Forest0"
             },
             {
+                "url": "src/components/Ladder.js",
+                "type": "script",
+                "key": "Ladder"
+            },
+            {
                 "url": "src/components/SceneExporter.js",
                 "type": "script",
                 "key": "SceneExporter"
+            },
+            {
+                "url": "src/components/UserComponent.js",
+                "type": "script",
+                "key": "UserComponent"
             }
         ]
     },

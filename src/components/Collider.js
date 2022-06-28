@@ -13,7 +13,13 @@ class Collider {
 		gameObject["__Collider"] = this;
 
 		/* START-USER-CTR-CODE */
-		// Write your code here.
+		gameObject.scene.events.once(Phaser.Scenes.Events.UPDATE, () => {
+			gameObject.setName('collider')
+			gameObject.setData('up', this.up)
+			gameObject.setData('down', this.down)
+			gameObject.setData('left', this.left)
+			gameObject.setData('right', this.right)
+		}, this);
 		/* END-USER-CTR-CODE */
 	}
 
@@ -35,7 +41,6 @@ class Collider {
 
 	/* START-USER-CODE */
 
-	// Write your code here.
 
 	/* END-USER-CODE */
 }

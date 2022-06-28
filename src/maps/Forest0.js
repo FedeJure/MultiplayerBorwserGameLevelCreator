@@ -28,14 +28,14 @@ class Forest0 extends Phaser.Scene {
 
 		// groundCollider
 		const groundCollider = this.add.rectangle(1, 1697, 128, 128);
-		groundCollider.scaleX = 15.996933847548783;
-		groundCollider.scaleY = 2.762982256217966;
+		groundCollider.scaleX = 2052.681359110714;
+		groundCollider.scaleY = 358.81356416070133;
 		groundCollider.setOrigin(0, 0);
 
 		// rectangle_1
 		const rectangle_1 = this.add.rectangle(0, 1184, 128, 128);
-		rectangle_1.scaleX = 2.9922349318757036;
-		rectangle_1.scaleY = 0.05299820435882996;
+		rectangle_1.scaleX = 3.003711237517988;
+		rectangle_1.scaleY = 0.12244768649666016;
 		rectangle_1.setOrigin(0, 0);
 
 		// ground_1
@@ -76,6 +76,12 @@ class Forest0 extends Phaser.Scene {
 		// button
 		const button = this.add.image(972, 1286, "button");
 
+		// rectangle_2
+		const rectangle_2 = this.add.rectangle(226, 1185, 128, 128);
+		rectangle_2.scaleX = 0.24048457424385264;
+		rectangle_2.scaleY = 3.995842206570253;
+		rectangle_2.setOrigin(0, 0);
+
 		// groundCollider (components)
 		new Collider(groundCollider);
 
@@ -85,6 +91,9 @@ class Forest0 extends Phaser.Scene {
 
 		// button (components)
 		new SceneExporter(button);
+
+		// rectangle_2 (components)
+		new Ladder(rectangle_2);
 
 		this.forest_1 = forest_1;
 
@@ -99,9 +108,7 @@ class Forest0 extends Phaser.Scene {
 	// Write your code here
 
 	create() {
-
 		this.editorCreate();
-		exportScene(this)
 	}
 
 	/* END-USER-CODE */
@@ -110,8 +117,3 @@ class Forest0 extends Phaser.Scene {
 /* END OF COMPILED CODE */
 
 // You can write more code here
-
-function exportScene(scene) {
-
-	document.scene = scene
-}

@@ -20,8 +20,8 @@
             ],
             "x": 1,
             "y": 1697,
-            "scaleX": 15.996933847548783,
-            "scaleY": 2.762982256217966,
+            "scaleX": 2052.681359110714,
+            "scaleY": 358.81356416070133,
             "originX": 0,
             "originY": 0,
             "width": 128,
@@ -36,8 +36,8 @@
             ],
             "Collider.up": true,
             "y": 1184,
-            "scaleX": 2.9922349318757036,
-            "scaleY": 0.05299820435882996,
+            "scaleX": 3.003711237517988,
+            "scaleY": 0.12244768649666016,
             "originX": 0,
             "originY": 0,
             "width": 128,
@@ -189,6 +189,22 @@
             },
             "x": 972,
             "y": 1286
+        },
+        {
+            "type": "Rectangle",
+            "id": "c69ebceb-0b95-4a3d-83e4-5bba78420ecf",
+            "label": "rectangle_2",
+            "components": [
+                "Ladder"
+            ],
+            "x": 226,
+            "y": 1185,
+            "scaleX": 0.24048457424385264,
+            "scaleY": 3.995842206570253,
+            "originX": 0,
+            "originY": 0,
+            "width": 128,
+            "height": 128
         }
     ],
     "plainObjects": [

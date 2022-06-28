@@ -52,6 +52,12 @@
             "baseClass": "",
             "gameObjectType": "Phaser.GameObjects.Image",
             "properties": []
+        },
+        {
+            "name": "Ladder",
+            "baseClass": "",
+            "gameObjectType": "Phaser.GameObjects.Rectangle",
+            "properties": []
         }
     ],
     "meta": {
