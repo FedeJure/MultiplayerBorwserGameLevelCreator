@@ -46,6 +46,12 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "SceneExporter",
+            "baseClass": "",
+            "gameObjectType": "Phaser.GameObjects.Image",
+            "properties": []
         }
     ],
     "meta": {
