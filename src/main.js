@@ -11,14 +11,15 @@ window.addEventListener('load', function () {
             autoCenter: Phaser.Scale.CENTER_BOTH
         },
     });
-
     game.scene.add("SceneLoader", SceneLoader, true);
+    
 
 });
 
 class SceneLoader extends Phaser.Scene {
     scenes = [
-        'Forest0'
+        'Forest0',
+        'ForestVillage'
     ]
     cursors
     camera
@@ -65,13 +66,17 @@ class SceneLoader extends Phaser.Scene {
             this.scenes.forEach(scene => {
                 this.scene.stop(scene)
             })
+            
             this.scene.launch(value);
             this.camera = this.scene.get(value).cameras.main
-            this.camera.setSize(2000, 2000)
+            if (this.camera)
+            this.camera.setSize(2048, 2048)
         }
+
     }
 
     update() {
+        if (!this.camera) return
         if (this.cursors.left.isDown) {
             this.camera.setPosition(this.camera.x  + 10, this.camera.y);
         }

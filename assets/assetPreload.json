@@ -48,6 +48,11 @@
                 "key": "Forest0"
             },
             {
+                "url": "src/maps/ForestVillage.js",
+                "type": "sceneFile",
+                "key": "ForestVillage"
+            },
+            {
                 "url": "src/components/Ladder.js",
                 "type": "script",
                 "key": "Ladder"
